@@ -5,4 +5,5 @@ from django.contrib.auth.models import AbstractUser
 class MyUser(AbstractUser):
     homepage = models.URLField(null=True, blank=True)
     display_name = models.CharField(max_length=30)
-    age = models.IntegerField(default=113) # extra credit - look up how to really do this
+    age = models.IntegerField(null=True, blank=True)
+    REQUIRED_FIELDS = ['age']

@@ -18,6 +18,7 @@ from django.urls import path
 from homepage import views
 
 urlpatterns = [
+    path('adduser/', views.add_user, name='adduser'),
     path('', views.homepage, name='home'),
     path('admin/', admin.site.urls),
     path('login/', views.login_view, name='login'),

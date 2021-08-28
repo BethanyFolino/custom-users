@@ -1,1 +1,11 @@
-<h1>Welcome {{display_name}}, you are logged in as {{username}}!</h1>
+
+{% if request.user.is_authenticated %}
+<h1>Welcome {{request.user.display_name}}, you are logged in as {{request.user.username}}!</h1>
+<a href='/logout/'>Log Out</a>
+{% else %}
+<h3>Are you a new user? Sign up here!</h3>
+<a href='/adduser/'>Sign Up</a>
+<h3>Already signed up? Login here!</h3>
+<a href='/login/'>Log In</a>
+{% endif %}
+<h3>{{my_users}}</h3>
