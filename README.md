@@ -1,0 +1,2 @@
+# Custom Users
+Custom Users is an app I made as part of Kenzie Academy's software engineering program. It involves using Abstract User to extend the user model. Users can sign up and create users, then log in and see a homepage that welcomes them by using their username and display name. As extra credit, I enabled the superuser command to ask for the user's age, and I made the age and homepage attributes show up in the admin panel for each user. 
